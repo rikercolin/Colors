@@ -25,7 +25,6 @@ namespace Colors
 
         public void RandomColor()
         {
- 
             color = Color.FromArgb(rand.Next(0,255), rand.Next(0, 255), rand.Next(0, 255)); //Prevent Alpha changes
         }
 
@@ -40,7 +39,6 @@ namespace Colors
 
             int shift = rand.Next(8, 64);
    
-
             for (int i = 0; i < colors.Length; i++)
             {
                 if (colors[i] < shift) colors[i] += (byte)shift;
@@ -52,7 +50,15 @@ namespace Colors
 
         public void AnalogousShift()
         {
+            byte shift = (byte)rand.Next(8, 255);
+            byte[] colors = { color.R, color.G, color.B };
 
+            //Find secondary color and rotate it about the primary by shift
+            if (colors[0] < colors[1] && colors[1] <= colors[2]) colors[1] += shift;
+            else if (colors[1] < colors[2] && colors[2] <= colors[0]) colors[2] += shift;
+            else colors[0] += shift;
+
+            this.color = Color.FromArgb(colors[0], colors[1], colors[2]);
         }
 
         public Color TextContrasticColor()

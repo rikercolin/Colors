@@ -47,8 +47,17 @@ namespace Colors
         {
             ColorManiplator maniplator = new ColorManiplator(ColorBox1.BackColor);
             maniplator.MonochromaticShift();
-            
             SetPanelAndLabel(ColorBox2, ColorLabel2, maniplator.GetColor());
+
+            maniplator = new ColorManiplator(ColorBox1.BackColor);
+            maniplator.AnalogousShift();
+            SetPanelAndLabel(ColorBox3, ColorLabel3, maniplator.GetColor());
+
+            maniplator.AnalogousShift();
+            SetPanelAndLabel(ColorBox4, ColorLabel4, maniplator.GetColor());
+
+            maniplator.AnalogousShift();
+            SetPanelAndLabel(ColorBox5, ColorLabel5, maniplator.GetColor());
         }
 
         private void SavePallete_Click(object sender, EventArgs e)
