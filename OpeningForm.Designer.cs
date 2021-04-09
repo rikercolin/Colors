@@ -27,20 +27,21 @@ namespace Colors
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent(Color backgroundcolor)
+        private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OpeningForm));
             this.btn_Start = new System.Windows.Forms.Button();
-            this.ColorPanel1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.ColorPanel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.lb_WelcomeText = new System.Windows.Forms.Label();
+            this.FreepikCredit = new System.Windows.Forms.LinkLabel();
+            this.TablePanel = new System.Windows.Forms.TableLayoutPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.TablePanel.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Start
@@ -49,70 +50,97 @@ namespace Colors
             this.btn_Start.Name = "btn_Start";
             this.btn_Start.UseVisualStyleBackColor = true;
             // 
-            // ColorPanel1
+            // lb_WelcomeText
             // 
-            this.ColorPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            resources.ApplyResources(this.ColorPanel1, "ColorPanel1");
-            this.ColorPanel1.Name = "ColorPanel1";
-            this.ColorPanel1.TabStop = false;
+            this.lb_WelcomeText.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.lb_WelcomeText, "lb_WelcomeText");
+            this.lb_WelcomeText.ForeColor = System.Drawing.Color.Black;
+            this.lb_WelcomeText.Name = "lb_WelcomeText";
             // 
-            // pictureBox1
+            // FreepikCredit
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
+            this.FreepikCredit.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(111)))), ((int)(((byte)(81)))));
+            resources.ApplyResources(this.FreepikCredit, "FreepikCredit");
+            this.FreepikCredit.BackColor = System.Drawing.Color.Transparent;
+            this.FreepikCredit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(196)))), ((int)(((byte)(106)))));
+            this.FreepikCredit.LinkColor = System.Drawing.Color.White;
+            this.FreepikCredit.Name = "FreepikCredit";
+            this.FreepikCredit.TabStop = true;
+            this.FreepikCredit.UseCompatibleTextRendering = true;
+            this.FreepikCredit.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
+            this.FreepikCredit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // pictureBox2
+            // TablePanel
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(196)))), ((int)(((byte)(106)))));
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
+            resources.ApplyResources(this.TablePanel, "TablePanel");
+            this.TablePanel.Controls.Add(this.panel5, 4, 0);
+            this.TablePanel.Controls.Add(this.panel4, 3, 0);
+            this.TablePanel.Controls.Add(this.panel3, 2, 0);
+            this.TablePanel.Controls.Add(this.panel2, 1, 0);
+            this.TablePanel.Controls.Add(this.panel1, 0, 0);
+            this.TablePanel.Name = "TablePanel";
+            this.TablePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.TablePanel_Paint);
             // 
-            // pictureBox3
+            // panel1
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(162)))), ((int)(((byte)(97)))));
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
+            this.panel1.Controls.Add(this.FreepikCredit);
+            this.panel1.Name = "panel1";
             // 
-            // pictureBox4
+            // panel2
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(111)))), ((int)(((byte)(81)))));
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.TabStop = false;
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
+            this.panel2.Name = "panel2";
+            // 
+            // panel3
+            // 
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(196)))), ((int)(((byte)(106)))));
+            this.panel3.Controls.Add(this.lb_WelcomeText);
+            this.panel3.Controls.Add(this.btn_Start);
+            this.panel3.Name = "panel3";
+            // 
+            // panel4
+            // 
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(162)))), ((int)(((byte)(97)))));
+            this.panel4.Name = "panel4";
+            // 
+            // panel5
+            // 
+            resources.ApplyResources(this.panel5, "panel5");
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(111)))), ((int)(((byte)(81)))));
+            this.panel5.Name = "panel5";
             // 
             // OpeningForm
             // 
             this.BackColor = System.Drawing.Color.White;
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.btn_Start);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ColorPanel1);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.TablePanel);
             this.Name = "OpeningForm";
             this.Load += new System.EventHandler(this.OpeningForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ColorPanel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.TablePanel.ResumeLayout(false);
+            this.TablePanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btn_Start;
-        private System.Windows.Forms.PictureBox ColorPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label lb_WelcomeText;
+        private System.Windows.Forms.LinkLabel FreepikCredit;
+        private System.Windows.Forms.TableLayoutPanel TablePanel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
     }
 }
 

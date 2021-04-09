@@ -17,7 +17,7 @@ namespace Colors
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OpeningForm(backgroundcolor));
+            Application.Run(new OpeningForm());
         }
     }
 }
