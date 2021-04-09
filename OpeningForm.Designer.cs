@@ -39,6 +39,7 @@ namespace Colors
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.TablePanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -49,6 +50,7 @@ namespace Colors
             resources.ApplyResources(this.btn_Start, "btn_Start");
             this.btn_Start.Name = "btn_Start";
             this.btn_Start.UseVisualStyleBackColor = true;
+            this.btn_Start.Click += new System.EventHandler(this.btn_Start_Click);
             // 
             // lb_WelcomeText
             // 
@@ -98,6 +100,7 @@ namespace Colors
             // 
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(196)))), ((int)(((byte)(106)))));
+            this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.lb_WelcomeText);
             this.panel3.Controls.Add(this.btn_Start);
             this.panel3.Name = "panel3";
@@ -113,6 +116,13 @@ namespace Colors
             resources.ApplyResources(this.panel5, "panel5");
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(111)))), ((int)(((byte)(81)))));
             this.panel5.Name = "panel5";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
+            this.label1.Name = "label1";
             // 
             // OpeningForm
             // 
@@ -141,6 +151,7 @@ namespace Colors
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
