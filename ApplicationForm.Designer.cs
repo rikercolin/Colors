@@ -32,28 +32,28 @@ namespace Colors
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApplicationForm));
             this.colorPalleteTable = new System.Windows.Forms.TableLayoutPanel();
             this.ButtonPanel = new System.Windows.Forms.Panel();
-            this.ColorBox1 = new System.Windows.Forms.Panel();
-            this.ColorBox2 = new System.Windows.Forms.Panel();
-            this.ColorBox3 = new System.Windows.Forms.Panel();
-            this.ColorBox4 = new System.Windows.Forms.Panel();
-            this.ColorBox5 = new System.Windows.Forms.Panel();
-            this.Generate = new System.Windows.Forms.Button();
-            this.SetSeedColor = new System.Windows.Forms.Button();
-            this.RandomSeedColor = new System.Windows.Forms.Button();
             this.SavePallete = new System.Windows.Forms.Button();
-            this.SeedColorPicker = new System.Windows.Forms.ColorDialog();
-            this.ColorLabel1 = new System.Windows.Forms.Label();
-            this.ColorLabel2 = new System.Windows.Forms.Label();
-            this.ColorLabel3 = new System.Windows.Forms.Label();
-            this.ColorLabel4 = new System.Windows.Forms.Label();
+            this.RandomSeedColor = new System.Windows.Forms.Button();
+            this.SetSeedColor = new System.Windows.Forms.Button();
+            this.Generate = new System.Windows.Forms.Button();
+            this.ColorBox5 = new System.Windows.Forms.Panel();
             this.ColorLabel5 = new System.Windows.Forms.Label();
+            this.ColorBox4 = new System.Windows.Forms.Panel();
+            this.ColorLabel4 = new System.Windows.Forms.Label();
+            this.ColorBox3 = new System.Windows.Forms.Panel();
+            this.ColorLabel3 = new System.Windows.Forms.Label();
+            this.ColorBox2 = new System.Windows.Forms.Panel();
+            this.ColorLabel2 = new System.Windows.Forms.Label();
+            this.ColorBox1 = new System.Windows.Forms.Panel();
+            this.ColorLabel1 = new System.Windows.Forms.Label();
+            this.SeedColorPicker = new System.Windows.Forms.ColorDialog();
             this.colorPalleteTable.SuspendLayout();
             this.ButtonPanel.SuspendLayout();
-            this.ColorBox1.SuspendLayout();
-            this.ColorBox2.SuspendLayout();
-            this.ColorBox3.SuspendLayout();
-            this.ColorBox4.SuspendLayout();
             this.ColorBox5.SuspendLayout();
+            this.ColorBox4.SuspendLayout();
+            this.ColorBox3.SuspendLayout();
+            this.ColorBox2.SuspendLayout();
+            this.ColorBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // colorPalleteTable
@@ -97,49 +97,49 @@ namespace Colors
             this.ButtonPanel.Size = new System.Drawing.Size(800, 100);
             this.ButtonPanel.TabIndex = 0;
             // 
-            // ColorBox1
+            // SavePallete
             // 
-            this.ColorBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.ColorBox1.Controls.Add(this.ColorLabel1);
-            this.ColorBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ColorBox1.Location = new System.Drawing.Point(0, 0);
-            this.ColorBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.ColorBox1.Name = "ColorBox1";
-            this.ColorBox1.Size = new System.Drawing.Size(160, 350);
-            this.ColorBox1.TabIndex = 1;
+            this.SavePallete.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SavePallete.Location = new System.Drawing.Point(610, 35);
+            this.SavePallete.Name = "SavePallete";
+            this.SavePallete.Size = new System.Drawing.Size(150, 30);
+            this.SavePallete.TabIndex = 3;
+            this.SavePallete.Text = "Save Pallete";
+            this.SavePallete.UseVisualStyleBackColor = true;
+            this.SavePallete.Click += new System.EventHandler(this.SavePallete_Click);
             // 
-            // ColorBox2
+            // RandomSeedColor
             // 
-            this.ColorBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
-            this.ColorBox2.Controls.Add(this.ColorLabel2);
-            this.ColorBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ColorBox2.Location = new System.Drawing.Point(160, 0);
-            this.ColorBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.ColorBox2.Name = "ColorBox2";
-            this.ColorBox2.Size = new System.Drawing.Size(160, 350);
-            this.ColorBox2.TabIndex = 2;
+            this.RandomSeedColor.Font = new System.Drawing.Font("Cascadia Code", 12F);
+            this.RandomSeedColor.Location = new System.Drawing.Point(40, 35);
+            this.RandomSeedColor.Name = "RandomSeedColor";
+            this.RandomSeedColor.Size = new System.Drawing.Size(150, 30);
+            this.RandomSeedColor.TabIndex = 2;
+            this.RandomSeedColor.Text = "Random Seed Color";
+            this.RandomSeedColor.UseVisualStyleBackColor = true;
+            this.RandomSeedColor.Click += new System.EventHandler(this.RandomSeedColor_Click);
             // 
-            // ColorBox3
+            // SetSeedColor
             // 
-            this.ColorBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(196)))), ((int)(((byte)(106)))));
-            this.ColorBox3.Controls.Add(this.ColorLabel3);
-            this.ColorBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ColorBox3.Location = new System.Drawing.Point(320, 0);
-            this.ColorBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.ColorBox3.Name = "ColorBox3";
-            this.ColorBox3.Size = new System.Drawing.Size(160, 350);
-            this.ColorBox3.TabIndex = 3;
+            this.SetSeedColor.Font = new System.Drawing.Font("Cascadia Code", 12F);
+            this.SetSeedColor.Location = new System.Drawing.Point(230, 35);
+            this.SetSeedColor.Name = "SetSeedColor";
+            this.SetSeedColor.Size = new System.Drawing.Size(150, 30);
+            this.SetSeedColor.TabIndex = 1;
+            this.SetSeedColor.Text = "Set Seed Color";
+            this.SetSeedColor.UseVisualStyleBackColor = true;
+            this.SetSeedColor.Click += new System.EventHandler(this.SetSeedColor_Click);
             // 
-            // ColorBox4
+            // Generate
             // 
-            this.ColorBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(162)))), ((int)(((byte)(97)))));
-            this.ColorBox4.Controls.Add(this.ColorLabel4);
-            this.ColorBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ColorBox4.Location = new System.Drawing.Point(480, 0);
-            this.ColorBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.ColorBox4.Name = "ColorBox4";
-            this.ColorBox4.Size = new System.Drawing.Size(160, 350);
-            this.ColorBox4.TabIndex = 4;
+            this.Generate.Font = new System.Drawing.Font("Cascadia Code", 12F);
+            this.Generate.Location = new System.Drawing.Point(420, 35);
+            this.Generate.Name = "Generate";
+            this.Generate.Size = new System.Drawing.Size(150, 30);
+            this.Generate.TabIndex = 0;
+            this.Generate.Text = "Generate Pallete";
+            this.Generate.UseVisualStyleBackColor = true;
+            this.Generate.Click += new System.EventHandler(this.Generate_Click);
             // 
             // ColorBox5
             // 
@@ -152,49 +152,113 @@ namespace Colors
             this.ColorBox5.Size = new System.Drawing.Size(160, 350);
             this.ColorBox5.TabIndex = 5;
             // 
-            // Generate
+            // ColorLabel5
             // 
-            this.Generate.Font = new System.Drawing.Font("Cascadia Code", 12F);
-            this.Generate.Location = new System.Drawing.Point(415, 38);
-            this.Generate.Name = "Generate";
-            this.Generate.Size = new System.Drawing.Size(150, 30);
-            this.Generate.TabIndex = 0;
-            this.Generate.Text = "Generate Pallete";
-            this.Generate.UseVisualStyleBackColor = true;
-            this.Generate.Click += new System.EventHandler(this.Generate_Click);
+            this.ColorLabel5.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ColorLabel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ColorLabel5.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ColorLabel5.ForeColor = System.Drawing.Color.White;
+            this.ColorLabel5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ColorLabel5.Location = new System.Drawing.Point(0, 300);
+            this.ColorLabel5.Margin = new System.Windows.Forms.Padding(0);
+            this.ColorLabel5.Name = "ColorLabel5";
+            this.ColorLabel5.Padding = new System.Windows.Forms.Padding(10);
+            this.ColorLabel5.Size = new System.Drawing.Size(160, 50);
+            this.ColorLabel5.TabIndex = 1;
+            this.ColorLabel5.Text = "#E76F51";
+            this.ColorLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SetSeedColor
+            // ColorBox4
             // 
-            this.SetSeedColor.Font = new System.Drawing.Font("Cascadia Code", 12F);
-            this.SetSeedColor.Location = new System.Drawing.Point(210, 38);
-            this.SetSeedColor.Name = "SetSeedColor";
-            this.SetSeedColor.Size = new System.Drawing.Size(150, 30);
-            this.SetSeedColor.TabIndex = 1;
-            this.SetSeedColor.Text = "Set Seed Color";
-            this.SetSeedColor.UseVisualStyleBackColor = true;
-            this.SetSeedColor.Click += new System.EventHandler(this.SetSeedColor_Click);
+            this.ColorBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(162)))), ((int)(((byte)(97)))));
+            this.ColorBox4.Controls.Add(this.ColorLabel4);
+            this.ColorBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ColorBox4.Location = new System.Drawing.Point(480, 0);
+            this.ColorBox4.Margin = new System.Windows.Forms.Padding(0);
+            this.ColorBox4.Name = "ColorBox4";
+            this.ColorBox4.Size = new System.Drawing.Size(160, 350);
+            this.ColorBox4.TabIndex = 4;
             // 
-            // RandomSeedColor
+            // ColorLabel4
             // 
-            this.RandomSeedColor.Font = new System.Drawing.Font("Cascadia Code", 12F);
-            this.RandomSeedColor.Location = new System.Drawing.Point(11, 38);
-            this.RandomSeedColor.Name = "RandomSeedColor";
-            this.RandomSeedColor.Size = new System.Drawing.Size(150, 30);
-            this.RandomSeedColor.TabIndex = 2;
-            this.RandomSeedColor.Text = "Random Seed Color";
-            this.RandomSeedColor.UseVisualStyleBackColor = true;
-            this.RandomSeedColor.Click += new System.EventHandler(this.RandomSeedColor_Click);
+            this.ColorLabel4.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ColorLabel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ColorLabel4.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ColorLabel4.ForeColor = System.Drawing.Color.Black;
+            this.ColorLabel4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ColorLabel4.Location = new System.Drawing.Point(0, 300);
+            this.ColorLabel4.Margin = new System.Windows.Forms.Padding(0);
+            this.ColorLabel4.Name = "ColorLabel4";
+            this.ColorLabel4.Padding = new System.Windows.Forms.Padding(10);
+            this.ColorLabel4.Size = new System.Drawing.Size(160, 50);
+            this.ColorLabel4.TabIndex = 1;
+            this.ColorLabel4.Text = "#F4A261";
+            this.ColorLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // SavePallete
+            // ColorBox3
             // 
-            this.SavePallete.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SavePallete.Location = new System.Drawing.Point(636, 38);
-            this.SavePallete.Name = "SavePallete";
-            this.SavePallete.Size = new System.Drawing.Size(150, 30);
-            this.SavePallete.TabIndex = 3;
-            this.SavePallete.Text = "Save Pallete";
-            this.SavePallete.UseVisualStyleBackColor = true;
-            this.SavePallete.Click += new System.EventHandler(this.SavePallete_Click);
+            this.ColorBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(233)))), ((int)(((byte)(196)))), ((int)(((byte)(106)))));
+            this.ColorBox3.Controls.Add(this.ColorLabel3);
+            this.ColorBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ColorBox3.Location = new System.Drawing.Point(320, 0);
+            this.ColorBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.ColorBox3.Name = "ColorBox3";
+            this.ColorBox3.Size = new System.Drawing.Size(160, 350);
+            this.ColorBox3.TabIndex = 3;
+            // 
+            // ColorLabel3
+            // 
+            this.ColorLabel3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ColorLabel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ColorLabel3.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ColorLabel3.ForeColor = System.Drawing.Color.Black;
+            this.ColorLabel3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ColorLabel3.Location = new System.Drawing.Point(0, 300);
+            this.ColorLabel3.Margin = new System.Windows.Forms.Padding(0);
+            this.ColorLabel3.Name = "ColorLabel3";
+            this.ColorLabel3.Padding = new System.Windows.Forms.Padding(10);
+            this.ColorLabel3.Size = new System.Drawing.Size(160, 50);
+            this.ColorLabel3.TabIndex = 1;
+            this.ColorLabel3.Text = "#E9C46A";
+            this.ColorLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ColorBox2
+            // 
+            this.ColorBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
+            this.ColorBox2.Controls.Add(this.ColorLabel2);
+            this.ColorBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ColorBox2.Location = new System.Drawing.Point(160, 0);
+            this.ColorBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.ColorBox2.Name = "ColorBox2";
+            this.ColorBox2.Size = new System.Drawing.Size(160, 350);
+            this.ColorBox2.TabIndex = 2;
+            // 
+            // ColorLabel2
+            // 
+            this.ColorLabel2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.ColorLabel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.ColorLabel2.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ColorLabel2.ForeColor = System.Drawing.Color.White;
+            this.ColorLabel2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ColorLabel2.Location = new System.Drawing.Point(0, 300);
+            this.ColorLabel2.Margin = new System.Windows.Forms.Padding(0);
+            this.ColorLabel2.Name = "ColorLabel2";
+            this.ColorLabel2.Padding = new System.Windows.Forms.Padding(10);
+            this.ColorLabel2.Size = new System.Drawing.Size(160, 50);
+            this.ColorLabel2.TabIndex = 1;
+            this.ColorLabel2.Text = "#2A9D8F";
+            this.ColorLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ColorBox1
+            // 
+            this.ColorBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
+            this.ColorBox1.Controls.Add(this.ColorLabel1);
+            this.ColorBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ColorBox1.Location = new System.Drawing.Point(0, 0);
+            this.ColorBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.ColorBox1.Name = "ColorBox1";
+            this.ColorBox1.Size = new System.Drawing.Size(160, 350);
+            this.ColorBox1.TabIndex = 1;
             // 
             // ColorLabel1
             // 
@@ -212,70 +276,6 @@ namespace Colors
             this.ColorLabel1.Text = "#264653";
             this.ColorLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ColorLabel2
-            // 
-            this.ColorLabel2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ColorLabel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ColorLabel2.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ColorLabel2.ForeColor = System.Drawing.Color.White;
-            this.ColorLabel2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ColorLabel2.Location = new System.Drawing.Point(0, 300);
-            this.ColorLabel2.Margin = new System.Windows.Forms.Padding(0);
-            this.ColorLabel2.Name = "ColorLabel2";
-            this.ColorLabel2.Padding = new System.Windows.Forms.Padding(10);
-            this.ColorLabel2.Size = new System.Drawing.Size(160, 50);
-            this.ColorLabel2.TabIndex = 1;
-            this.ColorLabel2.Text = "#264653";
-            this.ColorLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ColorLabel3
-            // 
-            this.ColorLabel3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ColorLabel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ColorLabel3.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ColorLabel3.ForeColor = System.Drawing.Color.White;
-            this.ColorLabel3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ColorLabel3.Location = new System.Drawing.Point(0, 300);
-            this.ColorLabel3.Margin = new System.Windows.Forms.Padding(0);
-            this.ColorLabel3.Name = "ColorLabel3";
-            this.ColorLabel3.Padding = new System.Windows.Forms.Padding(10);
-            this.ColorLabel3.Size = new System.Drawing.Size(160, 50);
-            this.ColorLabel3.TabIndex = 1;
-            this.ColorLabel3.Text = "#264653";
-            this.ColorLabel3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ColorLabel4
-            // 
-            this.ColorLabel4.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ColorLabel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ColorLabel4.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ColorLabel4.ForeColor = System.Drawing.Color.White;
-            this.ColorLabel4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ColorLabel4.Location = new System.Drawing.Point(0, 300);
-            this.ColorLabel4.Margin = new System.Windows.Forms.Padding(0);
-            this.ColorLabel4.Name = "ColorLabel4";
-            this.ColorLabel4.Padding = new System.Windows.Forms.Padding(10);
-            this.ColorLabel4.Size = new System.Drawing.Size(160, 50);
-            this.ColorLabel4.TabIndex = 1;
-            this.ColorLabel4.Text = "#264653";
-            this.ColorLabel4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ColorLabel5
-            // 
-            this.ColorLabel5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.ColorLabel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.ColorLabel5.Font = new System.Drawing.Font("Cascadia Code", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ColorLabel5.ForeColor = System.Drawing.Color.White;
-            this.ColorLabel5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ColorLabel5.Location = new System.Drawing.Point(0, 300);
-            this.ColorLabel5.Margin = new System.Windows.Forms.Padding(0);
-            this.ColorLabel5.Name = "ColorLabel5";
-            this.ColorLabel5.Padding = new System.Windows.Forms.Padding(10);
-            this.ColorLabel5.Size = new System.Drawing.Size(160, 50);
-            this.ColorLabel5.TabIndex = 1;
-            this.ColorLabel5.Text = "#264653";
-            this.ColorLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // ApplicationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -288,11 +288,11 @@ namespace Colors
             this.Load += new System.EventHandler(this.ApplicationForm_Load);
             this.colorPalleteTable.ResumeLayout(false);
             this.ButtonPanel.ResumeLayout(false);
-            this.ColorBox1.ResumeLayout(false);
-            this.ColorBox2.ResumeLayout(false);
-            this.ColorBox3.ResumeLayout(false);
-            this.ColorBox4.ResumeLayout(false);
             this.ColorBox5.ResumeLayout(false);
+            this.ColorBox4.ResumeLayout(false);
+            this.ColorBox3.ResumeLayout(false);
+            this.ColorBox2.ResumeLayout(false);
+            this.ColorBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

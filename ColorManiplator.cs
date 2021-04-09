@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Drawing;
 
 namespace Colors
@@ -25,7 +21,7 @@ namespace Colors
 
         public void RandomColor()
         {
-            color = Color.FromArgb(rand.Next(0,255), rand.Next(0, 255), rand.Next(0, 255)); //Prevent Alpha changes
+            color = Color.FromArgb(rand.Next(0, 255), rand.Next(0, 255), rand.Next(0, 255)); //Prevent Alpha changes
         }
 
         public Color GetColor()
@@ -35,16 +31,16 @@ namespace Colors
 
         public void MonochromaticShift()
         {
-            byte[] colors = { color.R, color.G, color.B};
+            byte[] colors = { color.R, color.G, color.B };
 
             int shift = rand.Next(8, 64);
-   
+
             for (int i = 0; i < colors.Length; i++)
             {
                 if (colors[i] < shift) colors[i] += (byte)shift;
                 else colors[i] -= (byte)shift;
             }
-            
+
             this.color = Color.FromArgb(colors[0], colors[1], colors[2]);
         }
 
@@ -63,7 +59,7 @@ namespace Colors
 
         public Color TextContrastColor()
         {
-            int avg = (color.R + color.G + color.B)/3;
+            int avg = (color.R + color.G + color.B) / 3;
 
             if (avg > 127) return Color.Black;
             else return Color.White;
