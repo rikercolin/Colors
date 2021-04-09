@@ -30,7 +30,7 @@ namespace Colors
 
             if (SeedColorPicker.ShowDialog() == DialogResult.OK)
             {
-                ColorBox1.BackColor = SeedColorPicker.Color;
+                SetPanelAndLabel(ColorBox1, ColorLabel1, SeedColorPicker.Color);
             }
 
         }
@@ -39,17 +39,27 @@ namespace Colors
         {
             ColorManiplator maniplator = new ColorManiplator();
             maniplator.RandomColor();
-            ColorBox1.BackColor = maniplator.GetColor();
-        }
+
+            SetPanelAndLabel(ColorBox1, ColorLabel1, maniplator.GetColor());
+         }
 
         private void Generate_Click(object sender, EventArgs e)
         {
-
+            ColorManiplator maniplator = new ColorManiplator(ColorBox1.BackColor);
+            maniplator.MonochromaticShift();
+            
+            SetPanelAndLabel(ColorBox2, ColorLabel2, maniplator.GetColor());
         }
 
         private void SavePallete_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void SetPanelAndLabel(Panel panel, Label label, Color color)
+        {
+            panel.BackColor = color;
+            label.Text = "#" + color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
         }
     }
 }
