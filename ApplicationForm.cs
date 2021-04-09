@@ -30,7 +30,8 @@ namespace Colors
 
             if (SeedColorPicker.ShowDialog() == DialogResult.OK)
             {
-                SetPanelAndLabel(ColorBox1, ColorLabel1, SeedColorPicker.Color);
+                ColorManiplator maniplator = new ColorManiplator(SeedColorPicker.Color);
+                SetPanelAndLabel(ColorBox1, ColorLabel1, maniplator.GetColor(), maniplator.TextContrastColor());
             }
 
         }
@@ -40,24 +41,24 @@ namespace Colors
             ColorManiplator maniplator = new ColorManiplator();
             maniplator.RandomColor();
 
-            SetPanelAndLabel(ColorBox1, ColorLabel1, maniplator.GetColor());
+            SetPanelAndLabel(ColorBox1, ColorLabel1, maniplator.GetColor(), maniplator.TextContrastColor());
          }
 
         private void Generate_Click(object sender, EventArgs e)
         {
             ColorManiplator maniplator = new ColorManiplator(ColorBox1.BackColor);
             maniplator.MonochromaticShift();
-            SetPanelAndLabel(ColorBox2, ColorLabel2, maniplator.GetColor());
+            SetPanelAndLabel(ColorBox2, ColorLabel2, maniplator.GetColor(), maniplator.TextContrastColor());
 
             maniplator = new ColorManiplator(ColorBox1.BackColor);
             maniplator.AnalogousShift();
-            SetPanelAndLabel(ColorBox3, ColorLabel3, maniplator.GetColor());
+            SetPanelAndLabel(ColorBox3, ColorLabel3, maniplator.GetColor(), maniplator.TextContrastColor());
 
             maniplator.AnalogousShift();
-            SetPanelAndLabel(ColorBox4, ColorLabel4, maniplator.GetColor());
+            SetPanelAndLabel(ColorBox4, ColorLabel4, maniplator.GetColor(), maniplator.TextContrastColor());
 
             maniplator.AnalogousShift();
-            SetPanelAndLabel(ColorBox5, ColorLabel5, maniplator.GetColor());
+            SetPanelAndLabel(ColorBox5, ColorLabel5, maniplator.GetColor(), maniplator.TextContrastColor());
         }
 
         private void SavePallete_Click(object sender, EventArgs e)
@@ -65,10 +66,11 @@ namespace Colors
 
         }
 
-        private void SetPanelAndLabel(Panel panel, Label label, Color color)
+        private void SetPanelAndLabel(Panel panel, Label label, Color color, Color textcolor)
         {
             panel.BackColor = color;
             label.Text = "#" + color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
+            label.ForeColor = textcolor;
         }
     }
 }

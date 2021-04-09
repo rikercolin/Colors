@@ -61,9 +61,12 @@ namespace Colors
             this.color = Color.FromArgb(colors[0], colors[1], colors[2]);
         }
 
-        public Color TextContrasticColor()
+        public Color TextContrastColor()
         {
-            return Color.Black;
+            int avg = (color.R + color.G + color.B)/3;
+
+            if (avg > 127) return Color.Black;
+            else return Color.White;
         }
     }
 }
