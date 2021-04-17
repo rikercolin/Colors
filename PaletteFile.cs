@@ -45,7 +45,7 @@ namespace Colors
                 Font font = new Font("Cascadia Code", 12F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0)));
 
                 graphics.FillRectangle(colorbrush, (i * 200), 0, 200, 600);
-                graphics.DrawString(ColorManiplator.ColorHexCode(colors[i]), font, textbrush, ((i * 200) + 52),500);
+                graphics.DrawString(ColorManiplator.ColorHexCode(colors[i]), font, textbrush, ((i * 200) + 64),500);
             }
             graphics.Save();
             return bmp;

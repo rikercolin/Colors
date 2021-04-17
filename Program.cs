@@ -9,7 +9,7 @@ namespace Colors
      * Description: A Color Pallete Generation App
      * Author: Colin R.
      * Date Created: 4/8/2021
-     * Last Edited: 4/9/2021
+     * Last Edited: 4/17/2021
     **/
     static class Program
     {
