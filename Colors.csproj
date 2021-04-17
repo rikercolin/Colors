@@ -74,6 +74,7 @@
     <Compile Include="OpeningForm.Designer.cs">
       <DependentUpon>OpeningForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PaletteFile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ApplicationForm.resx">

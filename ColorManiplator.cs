@@ -64,5 +64,18 @@ namespace Colors
             if (avg > 127) return Color.Black;
             else return Color.White;
         }
+
+        public static Color TextContrastColor(Color color)
+        {
+            int avg = (color.R + color.G + color.B) / 3;
+
+            if (avg > 127) return Color.Black;
+            else return Color.White;
+        }
+
+        public static string ColorHexCode(Color color)
+        {
+            return "#" + color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
+        }
     }
 }

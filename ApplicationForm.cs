@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
+
 namespace Colors
 {
     public partial class ApplicationForm : Form
@@ -57,13 +58,14 @@ namespace Colors
 
         private void SavePallete_Click(object sender, EventArgs e)
         {
-
+            PaletteFile palette = new PaletteFile(ColorBox1.BackColor, ColorBox2.BackColor, ColorBox3.BackColor, ColorBox4.BackColor,ColorBox5.BackColor);
+            palette.Save();
         }
 
         private void SetPanelAndLabel(Panel panel, Label label, Color color, Color textcolor)
         {
             panel.BackColor = color;
-            label.Text = "#" + color.R.ToString("X2") + color.G.ToString("X2") + color.B.ToString("X2");
+            label.Text = ColorManiplator.ColorHexCode(color);
             label.ForeColor = textcolor;
         }
     }

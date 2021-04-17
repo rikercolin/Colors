@@ -32,6 +32,7 @@ namespace Colors
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ApplicationForm));
             this.colorPalleteTable = new System.Windows.Forms.TableLayoutPanel();
             this.ButtonPanel = new System.Windows.Forms.Panel();
+            this.help_btn = new System.Windows.Forms.Button();
             this.SavePallete = new System.Windows.Forms.Button();
             this.RandomSeedColor = new System.Windows.Forms.Button();
             this.SetSeedColor = new System.Windows.Forms.Button();
@@ -86,6 +87,7 @@ namespace Colors
             // 
             this.ButtonPanel.BackColor = System.Drawing.Color.White;
             this.colorPalleteTable.SetColumnSpan(this.ButtonPanel, 5);
+            this.ButtonPanel.Controls.Add(this.help_btn);
             this.ButtonPanel.Controls.Add(this.SavePallete);
             this.ButtonPanel.Controls.Add(this.RandomSeedColor);
             this.ButtonPanel.Controls.Add(this.SetSeedColor);
@@ -97,12 +99,22 @@ namespace Colors
             this.ButtonPanel.Size = new System.Drawing.Size(800, 100);
             this.ButtonPanel.TabIndex = 0;
             // 
+            // help_btn
+            // 
+            this.help_btn.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.help_btn.Location = new System.Drawing.Point(30, 35);
+            this.help_btn.Name = "help_btn";
+            this.help_btn.Size = new System.Drawing.Size(140, 30);
+            this.help_btn.TabIndex = 4;
+            this.help_btn.Text = "Instructions";
+            this.help_btn.UseVisualStyleBackColor = true;
+            // 
             // SavePallete
             // 
             this.SavePallete.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SavePallete.Location = new System.Drawing.Point(610, 35);
+            this.SavePallete.Location = new System.Drawing.Point(630, 35);
             this.SavePallete.Name = "SavePallete";
-            this.SavePallete.Size = new System.Drawing.Size(150, 30);
+            this.SavePallete.Size = new System.Drawing.Size(140, 30);
             this.SavePallete.TabIndex = 3;
             this.SavePallete.Text = "Save Pallete";
             this.SavePallete.UseVisualStyleBackColor = true;
@@ -111,9 +123,9 @@ namespace Colors
             // RandomSeedColor
             // 
             this.RandomSeedColor.Font = new System.Drawing.Font("Cascadia Code", 12F);
-            this.RandomSeedColor.Location = new System.Drawing.Point(40, 35);
+            this.RandomSeedColor.Location = new System.Drawing.Point(330, 35);
             this.RandomSeedColor.Name = "RandomSeedColor";
-            this.RandomSeedColor.Size = new System.Drawing.Size(150, 30);
+            this.RandomSeedColor.Size = new System.Drawing.Size(140, 30);
             this.RandomSeedColor.TabIndex = 2;
             this.RandomSeedColor.Text = "Random Seed Color";
             this.RandomSeedColor.UseVisualStyleBackColor = true;
@@ -122,9 +134,9 @@ namespace Colors
             // SetSeedColor
             // 
             this.SetSeedColor.Font = new System.Drawing.Font("Cascadia Code", 12F);
-            this.SetSeedColor.Location = new System.Drawing.Point(230, 35);
+            this.SetSeedColor.Location = new System.Drawing.Point(180, 35);
             this.SetSeedColor.Name = "SetSeedColor";
-            this.SetSeedColor.Size = new System.Drawing.Size(150, 30);
+            this.SetSeedColor.Size = new System.Drawing.Size(140, 30);
             this.SetSeedColor.TabIndex = 1;
             this.SetSeedColor.Text = "Set Seed Color";
             this.SetSeedColor.UseVisualStyleBackColor = true;
@@ -133,9 +145,9 @@ namespace Colors
             // Generate
             // 
             this.Generate.Font = new System.Drawing.Font("Cascadia Code", 12F);
-            this.Generate.Location = new System.Drawing.Point(420, 35);
+            this.Generate.Location = new System.Drawing.Point(480, 35);
             this.Generate.Name = "Generate";
-            this.Generate.Size = new System.Drawing.Size(150, 30);
+            this.Generate.Size = new System.Drawing.Size(140, 30);
             this.Generate.TabIndex = 0;
             this.Generate.Text = "Generate Pallete";
             this.Generate.UseVisualStyleBackColor = true;
@@ -316,5 +328,6 @@ namespace Colors
         private System.Windows.Forms.Label ColorLabel4;
         private System.Windows.Forms.Label ColorLabel3;
         private System.Windows.Forms.Label ColorLabel2;
+        private System.Windows.Forms.Button help_btn;
     }
 }
