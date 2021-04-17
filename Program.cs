@@ -23,6 +23,7 @@ namespace Colors
 
             Application.Run(new OpeningForm()); //This is blocking
             if (start) Application.Run(new ApplicationForm());
+            Application.Run(new ExitForm());
         }
 
     }
