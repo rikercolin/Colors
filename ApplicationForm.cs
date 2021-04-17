@@ -68,5 +68,11 @@ namespace Colors
             label.Text = ColorManiplator.ColorHexCode(color);
             label.ForeColor = textcolor;
         }
+
+        private void help_btn_Click(object sender, EventArgs e)
+        { 
+            Form form = new Instructions();
+            form.Show();
+        }
     }
 }

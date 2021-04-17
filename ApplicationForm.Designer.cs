@@ -108,6 +108,7 @@ namespace Colors
             this.help_btn.TabIndex = 4;
             this.help_btn.Text = "Instructions";
             this.help_btn.UseVisualStyleBackColor = true;
+            this.help_btn.Click += new System.EventHandler(this.help_btn_Click);
             // 
             // SavePallete
             // 
