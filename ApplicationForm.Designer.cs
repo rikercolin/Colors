@@ -117,7 +117,7 @@ namespace Colors
             this.SavePallete.Name = "SavePallete";
             this.SavePallete.Size = new System.Drawing.Size(140, 30);
             this.SavePallete.TabIndex = 3;
-            this.SavePallete.Text = "Save Pallete";
+            this.SavePallete.Text = "Save Palette";
             this.SavePallete.UseVisualStyleBackColor = true;
             this.SavePallete.Click += new System.EventHandler(this.SavePallete_Click);
             // 
