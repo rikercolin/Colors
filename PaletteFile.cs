@@ -9,15 +9,30 @@ using System.IO;
 
 namespace Colors
 {
+    /// <summary>
+    /// Palette File handles the creation and saving of generated palettes
+    /// </summary>
     class PaletteFile
     {
         private Color[] colors;
+
+        /// <summary>
+        /// Constructs a palette file from the five colors that make up a palette
+        /// </summary>
+        /// <param name="Color one"></param>
+        /// <param name="Color two"></param>
+        /// <param name="Color three"></param>
+        /// <param name="Color four"></param>
+        /// <param name="Color five"></param>
         public PaletteFile(Color a, Color b, Color c, Color d, Color e)
         {
             Color[] colorss = { a, b, c, d, e };
             colors = colorss;
         }
 
+        /// <summary>
+        /// Generates and saves the current palette in the instance
+        /// </summary>
         public void Save()
         {
             SaveFileDialog savePaletteDialog = new SaveFileDialog();
